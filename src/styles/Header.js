@@ -70,6 +70,10 @@ export const NavLogo = styled.h1`
         letter-spacing: 5px;
         user-select: none;
     }
+
+    @media screen and (max-width: 400px) {
+        font-size: 1.2em;
+    }
 `
 
 export const NavItem = styled.li`
