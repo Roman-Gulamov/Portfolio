@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 
-export const Header = styled.header`
-    height: 15vh;
+export const HeaderWrapper = styled.header`
+    height: 14vh;
     background: #5b78c7;
 ` 
 
@@ -73,6 +73,7 @@ export const NavLogo = styled.h1`
 
     @media screen and (max-width: 400px) {
         font-size: 1.2em;
+        padding-right: 1.1em;
     }
 `
 
