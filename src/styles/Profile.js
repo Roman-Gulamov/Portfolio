@@ -58,18 +58,19 @@ export const InformationPosition = styled.span`
 
 export const InformationAbout = styled.p`
     white-space: pre-line;
+    font-size: 0.95em;
     line-height: 1.5;
 `
 
 export const InformationButton = styled.button`
     width: 13em;
     height: 2.5em;
-    cursor: pointer;
     margin: 0.5em auto 0;
-    text-transform: uppercase;
+    cursor: pointer;
     border: none;
     border-radius: 20px;
     background: #39D084;
+    text-transform: uppercase;
     transition: all 0.4s ease;
 
     &:hover, &:active {
