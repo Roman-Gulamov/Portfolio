@@ -1,4 +1,4 @@
-import { faVk, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faVk, faTelegram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 export const SOCIAL_LINKS = [
@@ -8,9 +8,9 @@ export const SOCIAL_LINKS = [
         icon: faVk,
     },
     {
-        name: 'instagram',
-        path: 'https://www.instagram.com/memento_turk',
-        icon: faInstagram,
+        name: 'telegram',
+        path: 'https://teleg.run/memento_turk',
+        icon: faTelegram,
     },
     {
         name: 'gitHub',
