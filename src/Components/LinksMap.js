@@ -7,7 +7,7 @@ import { faBriefcase, faUser, faFilePdf } from '@fortawesome/free-solid-svg-icon
 import { faReact } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const LINKS = [
+const NAV_LINKS = [
     {
         path: 'profile',
         avatar: faUser,
@@ -30,11 +30,11 @@ const LINKS = [
     }
 ]
 
-export const LinksMap = () => {
+export const LinksMap = ({ onClick }) => {
     return (
         <> 
-        {LINKS.map(({ path, avatar, title }) =>
-            <NavItem key={title}>
+        {NAV_LINKS.map(({ path, avatar, title }) =>
+            <NavItem key={title} onClick={onClick}>
                 <NavLink to={path} activeStyle={{ background: '#203748' }} >
                     <FontAwesomeIcon icon={avatar} size="lg" />
                     <span>{title}</span>
