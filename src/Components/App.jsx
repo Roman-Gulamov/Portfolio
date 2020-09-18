@@ -22,8 +22,7 @@ export const App = () => {
         <GlobalStyle />
         <Router>
             <Header />
-            <Footer />
-
+            
             <Switch>
                 <Route path='/profile' component={Profile}/>
                 <Route path='/skills' component={Skills}/>
@@ -32,6 +31,8 @@ export const App = () => {
                 <Route path='/contact' component={Feedback}/>
                 <Redirect to="/profile" />
             </Switch>
+            
+            <Footer />
         </Router>    
         </>
     )
