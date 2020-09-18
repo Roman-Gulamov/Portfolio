@@ -29,10 +29,11 @@ export const NavHumburger = styled.div`
 
 export const Line = styled.div`
     @media screen and (max-width: 768px) {
-        width: 30px;
-        height: 3px;
+        width: 1.4em;
+        height: 0.13em;
         background: white;
-        margin: 5px;
+        margin: 0.3em;
+        z-index: 9999;
     }
 `
 
@@ -40,6 +41,7 @@ export const NavWrapper = styled.ul`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    z-index: 1;
 
     @media screen and (max-width: 768px) {
         position: fixed;
