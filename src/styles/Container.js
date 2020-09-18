@@ -4,17 +4,17 @@ export const Container = styled.div`
     padding: 0 15px;
 
     @media (min-width: 575.98px){
-        padding: 0 calc(50% - 200px);
+        padding: 0 calc(50vw - 220px);
     }
     @media (min-width: 767.98px){
-        padding: 0 calc(50% - 260px);
+        padding: 0 calc(50vw - 310px);
     }
 
     @media (min-width: 991.98px) {
-        padding: 0 calc(50% - 380px);
+        padding: 0 calc(50vw - 430px);
     }
 
     @media (min-width: 1199.98px){
-        padding: 0 calc(50% - 490px);
+        padding: 0 calc(50vw - 540px);
     }
 `
