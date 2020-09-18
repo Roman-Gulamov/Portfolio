@@ -37,6 +37,12 @@ export const ProfileInformation = styled.div`
     @media screen and (max-width: 991px) {
         width: 100%;
     }
+
+    & a {
+        width: 13em;
+        height: 2.5em;
+        margin: 0.5em auto 0;
+    }
 ` 
 
 export const InformationName = styled.h1`
@@ -58,26 +64,10 @@ export const InformationPosition = styled.span`
 
 export const InformationAbout = styled.p`
     white-space: pre-line;
-    font-size: 0.95em;
-    line-height: 1.5;
+    font-size: 1em;
+    line-height: 1.6;
+
+    @media screen and (max-width: 500px) {
+        font-size: 0.9em;
+    }
 `
-
-export const InformationButton = styled.button`
-    width: 13em;
-    height: 2.5em;
-    margin: 0.5em auto 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 20px;
-    background: #39D084;
-    text-transform: uppercase;
-    transition: all 0.4s ease;
-
-    &:hover, &:active {
-        background: #39D024;
-    }
-
-    &:active {
-        transform: scale(0.94);
-    }
-` 
