@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Header } from './Components/Header/Header';
+import { App } from './Components/App';
 
 import './assets/fonts/kufam/stylesheet.css';
 import './assets/fonts/architectsDaughter/stylesheet.css';
 
-ReactDOM.render(<Header />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
