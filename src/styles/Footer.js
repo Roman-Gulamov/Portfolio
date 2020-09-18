@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const FooterWrapper = styled.footer`
     position: fixed;
     bottom: 0;
-    height: 10vh;
+    height: 9.5vh;
     width: 100%;
     background: #355267;
     z-index: 9999;

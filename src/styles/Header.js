@@ -65,17 +65,22 @@ export const NavLogo = styled.h1`
     display: none;
 
     @media screen and (max-width: 768px) {
+        font-size: 1.6em;
         display: flex;
         font-family: 'Architects Daughter';
         align-items: center;
-        font-size: 2em;
+        margin-right: 1em;
         letter-spacing: 5px;
         user-select: none;
     }
 
     @media screen and (max-width: 400px) {
         font-size: 1.2em;
-        padding-right: 1.1em;
+        margin-right: 1.4em;
+    }
+
+    @media screen and (max-width: 281px) {
+        font-size: 0.9em;
     }
 `
 
@@ -86,13 +91,13 @@ export const NavItem = styled.li`
     width: 8.4em;
 
     & a {
-        padding: 0px 15px;
         width: 100%;
         height: 70%;
         display: flex;
-        justify-content: space-around;
-        border-radius: 30px;
         align-items: center;
+        justify-content: space-around;
+        padding: 0px 15px;
+        border-radius: 30px;
         text-decoration: none;
         transition: all 0.4s ease;
 

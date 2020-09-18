@@ -34,7 +34,7 @@ export const ProfileInformation = styled.div`
     justify-content: space-evenly;
     font-weight: normal;
 
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
     }
 
@@ -42,6 +42,10 @@ export const ProfileInformation = styled.div`
         width: 13em;
         height: 2.5em;
         margin: 0.5em auto 0;
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
     }
 ` 
 
@@ -63,11 +67,21 @@ export const InformationPosition = styled.span`
 ` 
 
 export const InformationAbout = styled.p`
+    position: relative;
     white-space: pre-line;
     font-size: 1em;
     line-height: 1.6;
 
-    @media screen and (max-width: 500px) {
-        font-size: 0.9em;
+    &, & span  {
+        @media screen and (max-width: 500px) {
+            font-size: 0.9em;
+        }
+
+        &:first-child {
+            @media screen and (max-width: 768px) {
+                position: absolute;
+                left: 40%;
+            }
+        }
     }
 `
