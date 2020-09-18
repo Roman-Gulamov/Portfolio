@@ -43,15 +43,14 @@ export const Profile = () => {
                             </InformationPosition>
                         </InformationName>
                         <InformationAbout>
-                            Hello! <span role="img" aria-label="give-five">&#128588;</span> {'\n'}
-                            I am Roman Gulamov, Front-end Developer from Saint Petersburg
-                            <span role="img" aria-label="give-five">&#127969;</span> {'\n'}  
+                            <span role="img" aria-label="give-five">Hello! &#128588;</span> {'\n'}
+                            <span role="img" aria-label="give-five">
+                                I am Roman Gulamov, Front-end Developer from Saint Petersburg &#127969;
+                            </span> {'\n'}  
                             If you are looking for a programmer just write to me and I will gladly become a part of your team!
                         </InformationAbout>
                         <NavLink to='/contact'>
-                            <Button>
-                                Hire me
-                            </Button>
+                            <Button>Hire me</Button>
                         </NavLink>
                     </ProfileInformation>
                 </ProfileWrapper>
