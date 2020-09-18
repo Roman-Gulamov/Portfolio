@@ -7,7 +7,7 @@ export const Container = styled.div`
         padding: 0 calc(50vw - 220px);
     }
     @media (min-width: 767.98px){
-        padding: 0 calc(50vw - 310px);
+        padding: 0 calc(50vw - 345px);
     }
 
     @media (min-width: 991.98px) {
