@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const FeedbackWrapper = styled.div`
+export const FeedbackWrapper = styled.main`
     margin: 1.2em 0em 15vh;
 ` 
 
@@ -45,6 +45,14 @@ export const FormItem = styled.div`
         left: 4%;
         color: #fc6c18;
         font-size: 0.7em;
+
+        @media screen and (max-width: 500px) {
+            font-size: 0.57em;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 0.43em;
+        }
     }
 ` 
 
