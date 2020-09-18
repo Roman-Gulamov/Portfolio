@@ -25,10 +25,10 @@ export const Button = styled.button`
         position: absolute;
         top: 0;
         left: 35%;
-        width: 30%;
+        width: 20%;
         height: 100%;
         border-radius: 20px;
-        transition: all .4s ease;
+        transition: all 0.4s ease;
         z-index: -1;
     }
 
