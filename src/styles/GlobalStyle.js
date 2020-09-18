@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Kufam';
         font-size: 21px;
         line-height: 1.2;
-        color: white;
+        color: #fff;
         outline: none;
     }
 
@@ -82,6 +82,12 @@ export const GlobalStyle = createGlobalStyle`
     table {
         border-collapse: collapse;
         border-spacing: 0;
+    }
+
+    textarea {
+        &::-webkit-scrollbar { 
+            width: 0; 
+        }
     }
 
     time {
