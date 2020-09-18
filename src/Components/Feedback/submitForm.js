@@ -9,7 +9,7 @@ export const submitForm = (values) => {
     axios.post("https://formspree.io/xbjpredk", {...values})
     .then(response => {
         if (response.status === 200) {
-            history.push('/train-search/#/profile');
+            history.push('/Portfolio/#/profile');
             history.go(0);
 
             window.location.reload(); // for mobile phone
