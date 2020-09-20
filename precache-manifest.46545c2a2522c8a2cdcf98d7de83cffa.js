@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e5f705839f9c11c46ae011fa007fc0e",
+    "revision": "68c0c4e1028d921726fd8a8dc4822bbc",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "3387101ab39969db913b",
+    "revision": "f7cd1ba79d4ade97f6aa",
     "url": "/Portfolio/static/css/main.8a223549.chunk.css"
   },
   {
-    "revision": "7ebcbe3c58b21deb9ff1",
-    "url": "/Portfolio/static/js/2.81bf827b.chunk.js"
+    "revision": "7a7c503e558f3ee40425",
+    "url": "/Portfolio/static/js/2.b6ffa368.chunk.js"
   },
   {
     "revision": "77e7f328dacc981fca681ee4ae94d669",
-    "url": "/Portfolio/static/js/2.81bf827b.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.b6ffa368.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3387101ab39969db913b",
-    "url": "/Portfolio/static/js/main.e15c2a30.chunk.js"
+    "revision": "f7cd1ba79d4ade97f6aa",
+    "url": "/Portfolio/static/js/main.90abaa67.chunk.js"
   },
   {
     "revision": "b83a37198ba343383876",
@@ -32,6 +32,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/PHP.5bd7d39e.png"
   },
   {
+    "revision": "a8e168a4ff324cfffa36158e560998ac",
+    "url": "/Portfolio/static/media/Rapture.a8e168a4.png"
+  },
+  {
     "revision": "61a7eeee285cd4b16e3f86b37ab01ae3",
     "url": "/Portfolio/static/media/ReactImg.61a7eeee.png"
   },
@@ -42,6 +46,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "380e22e306f5f0e7ceb6077715651b76",
     "url": "/Portfolio/static/media/SCSS.380e22e3.png"
+  },
+  {
+    "revision": "ca1d88fedafe06d458b7ca45ec3d0a9d",
+    "url": "/Portfolio/static/media/Subjects.ca1d88fe.png"
+  },
+  {
+    "revision": "274dcb1a014586d5645f1ff18d5c8b1c",
+    "url": "/Portfolio/static/media/TicTac.274dcb1a.png"
+  },
+  {
+    "revision": "232e28007eb95e01cdaf76993a26e1e8",
+    "url": "/Portfolio/static/media/TrainsAggregator.232e2800.png"
+  },
+  {
+    "revision": "609ac3b920b5e24040fafd63bb2a644c",
+    "url": "/Portfolio/static/media/TypeScriptForm.609ac3b9.png"
   },
   {
     "revision": "38eee64101a7765d306b5eb1d9622702",
