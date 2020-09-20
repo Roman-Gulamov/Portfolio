@@ -1,13 +1,13 @@
-import ReactImg from '../../assets/images/ReactImg.png';
-import JavaScript from '../../assets/images/JavaScript.png';
-import HTML from '../../assets/images/HTML.png';
-import SCSS from '../../assets/images/SCSS.png';
-import jQuery from '../../assets/images/jQuery.png';
-import StyledComponents from '../../assets/images/styled-components.png';
-import Webpack from '../../assets/images/Webpack.png';
-import Gulp from '../../assets/images/Gulp.png';
-import TypeScript from '../../assets/images/TypeScript.png';
-import PHP from '../../assets/images/PHP.png';
+import ReactImg from '../../assets/images/skills/ReactImg.png';
+import JavaScript from '../../assets/images/skills/JavaScript.png';
+import HTML from '../../assets/images/skills/HTML.png';
+import SCSS from '../../assets/images/skills/SCSS.png';
+import jQuery from '../../assets/images/skills/jQuery.png';
+import StyledComponents from '../../assets/images/skills/styled-components.png';
+import Webpack from '../../assets/images/skills/Webpack.png';
+import Gulp from '../../assets/images/skills/Gulp.png';
+import TypeScript from '../../assets/images/skills/TypeScript.png';
+import PHP from '../../assets/images/skills/PHP.png';
 
 
 export const SKILLS_DATA = [

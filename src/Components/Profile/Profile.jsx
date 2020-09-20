@@ -17,7 +17,7 @@ import {
     InformationAbout
 } from '../../styles/Profile';
 
-import Roman from '../../assets/images/Roman.jpg';
+import Roman from '../../assets/images/profile/Roman.jpg';
 
 
 export const Profile = () => {
