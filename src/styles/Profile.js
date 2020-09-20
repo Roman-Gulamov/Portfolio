@@ -15,10 +15,6 @@ export const ProfileImage = styled.div`
     @media screen and (max-width: 991px) {
         width: 13em;
     }
-    
-    @media screen and (max-width: 500px) {
-        width: 10em;
-    }
 `
 
 export const ImagePerson = styled.img`
@@ -69,19 +65,12 @@ export const InformationPosition = styled.span`
 export const InformationAbout = styled.p`
     position: relative;
     white-space: pre-line;
-    font-size: 1em;
     line-height: 1.6;
 
-    &, & span  {
-        @media screen and (max-width: 500px) {
-            font-size: 0.9em;
-        }
-
-        &:first-child {
-            @media screen and (max-width: 768px) {
-                position: absolute;
-                left: 40%;
-            }
+    & span:first-child  {
+        @media screen and (max-width: 768px) {
+            position: absolute;
+            left: 40%;
         }
     }
 `
