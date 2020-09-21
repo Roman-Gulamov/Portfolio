@@ -17,7 +17,11 @@ export const Footer = () => {
             <Container>
                 <FooterSocial>
                     {SOCIAL_LINKS.map(({ name, path, icon }) =>
-                        <SocialItem href={path} target='_blank' key={name}>
+                        <SocialItem 
+                            key={name}
+                            href={path} 
+                            target='_blank' 
+                        >
                             <FontAwesomeIcon icon={icon} size="2x" />
                         </SocialItem>
                     )}
