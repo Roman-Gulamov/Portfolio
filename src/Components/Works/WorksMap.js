@@ -1,29 +1,40 @@
 import React from 'react';
 
-import { WORKS_DATA } from './WorksData';
+import { faGithub, faChrome } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { 
+import {
     ExamplesItem,
     ItemImg,
     ItemDescription,
-    DescriptionText,
-    TextTitle
+    DescriptionProject,
+    ProjectTitle,
+    ProjectLinks,
+    LinksGit
 } from '../../styles/Works';
 
 
-export const WorksMap = () => {
+export const WorksMap = ({ worksData }) => {
     return (
-        <>
-        {WORKS_DATA.map(({ name, img, git, ghPages, language }) =>
-            <ExamplesItem key={name}>
-                <ItemImg src={img} alt='name' />
+        worksData.map(({ id, img, git, ghPages, languageName }) =>
+            <ExamplesItem key={id}>
+                <ItemImg src={img} alt={languageName} />
                 <ItemDescription>
-                    <DescriptionText>
-                        <TextTitle>{name}</TextTitle>
-                    </DescriptionText>
+                    <DescriptionProject>
+                        <ProjectTitle>{languageName}</ProjectTitle>
+                        <ProjectLinks>
+                            <LinksGit href={git} target="_blank">
+                                <FontAwesomeIcon icon={faGithub} size="2x" />
+                            </LinksGit>
+                        {ghPages !== null ? 
+                            <LinksGit href={ghPages} target="_blank">
+                                <FontAwesomeIcon icon={faChrome} size="2x" />
+                            </LinksGit>
+                        : null}
+                        </ProjectLinks>
+                    </DescriptionProject>
                 </ItemDescription>
             </ExamplesItem>
-        )}
-        </>
+        )
     )
 }
