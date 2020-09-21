@@ -23,15 +23,20 @@ export const SortLanguage = styled.li`
     padding: 0.7em;
     cursor: pointer;
     border-radius: inherit;
+    background: ${props => props.activeClass ?  '#5b78c7' : 'none'};
     transition: all .3s ease;
     
     @media screen and (max-width: 500px) {
-        padding: 1em;
+        padding: 1.5em;
         font-size: 0.6em;
     }
 
+    @media screen and (max-width: 290px) {
+        padding: 1em;
+    }
+
     &:hover {
-        background: green;
+        background: #5b78c7;
     }
 ` 
 
@@ -66,19 +71,40 @@ export const ItemDescription = styled.div`
     transition: all .4s ease;
 
     &:hover {
-        background: black;
-        opacity: 0.8;
+        background: #000;
+        opacity: 0.9;
     }
 ` 
 
-export const DescriptionText = styled.div`
+export const DescriptionProject = styled.div`
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 ` 
 
-export const TextTitle = styled.h2`
-    color: green;
-    font-size: 2em;
+export const ProjectTitle = styled.h2`
+    color: #5b78c7;
+    font-size: 1.1em;
+
+    @media screen and (max-width: 290px) {
+        font-size: 0.7em;
+    }
 ` 
+
+export const ProjectLinks = styled.div`
+    margin-top: 1em;
+`
+
+export const LinksGit = styled.a`
+    padding: 1em;
+
+    & svg {
+        transition: all .4s ease;
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+`
