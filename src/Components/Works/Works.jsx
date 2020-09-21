@@ -1,6 +1,8 @@
-import React from 'react';
+/* eslint-disable array-callback-return */
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 
+import { WORKS_DATA, LANGUAGE_DATA } from './WorksData';
 import { WorksMap } from './WorksMap';
 
 import { Container } from '../../styles/Container';
@@ -12,8 +14,28 @@ import {
     WorksExamples
 } from '../../styles/Works';
 
-
 export const Works = () => {
+    const [newData, setNewData] = useState(WORKS_DATA);
+    const [activeClass, setActiveClass] = useState('');
+    const worksData = WORKS_DATA;
+
+    const filterWorks = (language) => {
+        setActiveClass(language);
+        setNewData([]);
+
+        worksData.map((data) => {
+            const languageName = data.languageName.split('/');
+
+            if (languageName.some(name => name === language)) {
+                setNewData(oldData => [...oldData, data]);
+            } else if (language === 'All') {
+                setNewData(WORKS_DATA);
+            } else {
+                return false;
+            }
+        })
+    }
+
     return (
         <>
         <Helmet>
@@ -24,17 +46,21 @@ export const Works = () => {
         </Helmet>
             <WorksWrapper>
                 <Container>
-                    <WorksSort>
-                        <SortWrapper>
-                            <SortLanguage>All</SortLanguage>
-                            <SortLanguage>React</SortLanguage>
-                            <SortLanguage>jQuery</SortLanguage>
-                            <SortLanguage>TypeScript</SortLanguage>
-                        </SortWrapper>
-                    </WorksSort>
-                    <WorksExamples>
-                        <WorksMap />
-                    </WorksExamples>
+                <WorksSort>
+                    <SortWrapper>
+                        {LANGUAGE_DATA.map(({ id, language }) =>
+                            <SortLanguage
+                                activeClass={activeClass === language ? activeClass : null}
+                                key={id} 
+                                onClick={() => filterWorks(language)}
+                            >   {language}
+                            </SortLanguage>
+                        )}
+                    </SortWrapper>
+                </WorksSort>
+                <WorksExamples>
+                    <WorksMap worksData={newData} />
+                </WorksExamples>
                 </Container>
             </WorksWrapper>
         </>
