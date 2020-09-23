@@ -26,14 +26,17 @@ export const Header = () => {
         <Router>
             <HeaderWrapper>
                 <HeaderNav>
-                    <NavHumburger onClick={toggleMenu} >
+                    <NavHumburger 
+                        onClick={toggleMenu} 
+                        position={isOpen === 'open' ? 'fixed' : 'absolute'}
+                    >
                         <Line />
                         <Line />
                         <Line />
                     </NavHumburger>
                     <NavLogo>Roman Gulamov</NavLogo>
                     <NavWrapper className={isOpen}>
-                        <LinksMap onClick={toggleMenu}/>
+                        <LinksMap onClick={toggleMenu} />
                     </NavWrapper>
                 </HeaderNav>
             </HeaderWrapper>
