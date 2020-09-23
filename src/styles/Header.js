@@ -17,7 +17,7 @@ export const NavHumburger = styled.div`
     display: none;
 
     @media screen and (max-width: 768px) {
-        position: absolute;
+        position: ${props => props.position};
         display: block;
         cursor: pointer;
         right: 5%;
