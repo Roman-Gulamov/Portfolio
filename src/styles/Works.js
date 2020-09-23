@@ -88,8 +88,8 @@ export const ProjectTitle = styled.h2`
     color: #5b78c7;
     font-size: 1.1em;
 
-    @media screen and (max-width: 290px) {
-        font-size: 0.7em;
+    @media screen and (max-width: 500px) {
+        font-size: 0.8em;
     }
 ` 
 
