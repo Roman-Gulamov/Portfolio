@@ -10,7 +10,7 @@ export const Button = styled.button`
     background: #39D084;
     text-transform: uppercase;
     transition: all 0.4s ease;
-    z-index: 1000;
+    z-index: 0;
 
     &:hover, &:active {
         color: #000;
