@@ -30,7 +30,7 @@ export const Resume = () => {
                     <span role="img" aria-label="handshake">&#129309;</span>
                 </ResumeDescription>
                 <ResumeDownload>
-                    <DownloadButton href="https://yadi.sk/i/U48lJNir0w3qJg" target="_blank">
+                    <DownloadButton href="https://spb.hh.ru/resume/2a00967dff07b1356f0039ed1f564e32555368" target="_blank">
                         <Button>Show Resume</Button>
                     </DownloadButton>
                 </ResumeDownload>
