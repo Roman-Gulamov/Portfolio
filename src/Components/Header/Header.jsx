@@ -9,6 +9,7 @@ import {
     NavHumburger,
     Line,
     NavWrapper,
+    NavInvisible,
     NavLogo } from '../../styles/Header';
 
 
@@ -19,7 +20,7 @@ export const Header = () => {
         if (window.innerWidth <= 768) {
             isOpen === 'open' ? setIsOpen('') : setIsOpen('open');
         }
-    }
+    }   
 
     return (
         <>
@@ -37,6 +38,7 @@ export const Header = () => {
                     <NavLogo>Roman Gulamov</NavLogo>
                     <NavWrapper className={isOpen}>
                         <LinksMap onClick={toggleMenu} />
+                        <NavInvisible className={isOpen} onClick={toggleMenu}></NavInvisible>
                     </NavWrapper>
                 </HeaderNav>
             </HeaderWrapper>
