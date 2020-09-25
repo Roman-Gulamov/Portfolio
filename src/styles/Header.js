@@ -61,6 +61,17 @@ export const NavWrapper = styled.ul`
     }
 `
 
+export const NavInvisible = styled.div`
+    &.open {
+        position: absolute;
+        top: 100%;
+        opacity: 0;
+        width: 100%;
+        height: 48em;
+        z-index: -1;
+    }
+`
+
 export const NavLogo = styled.h1`
     display: none;
 
