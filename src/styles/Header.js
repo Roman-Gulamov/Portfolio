@@ -63,11 +63,13 @@ export const NavWrapper = styled.ul`
 
 export const NavInvisible = styled.div`
     &.open {
-        position: absolute;
-        top: 100%;
-        opacity: 0;
         width: 100%;
         height: 48em;
+        position: absolute;
+        top: 100%;
+        opacity: 0.2;
+        background: black;
+        cursor: pointer;
         z-index: -1;
     }
 `
