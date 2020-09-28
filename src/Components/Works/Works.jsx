@@ -36,6 +36,14 @@ export const Works = () => {
         })
     }
 
+    const searchActive = (language) => {
+        if (activeClass === "" && language === "All") {
+            return "All"
+        } else if (activeClass === language) {
+            return activeClass
+        }
+    }
+
     
     return (
         <>
@@ -51,7 +59,7 @@ export const Works = () => {
                     <SortWrapper>
                         {LANGUAGE_DATA.map(({ id, language }) =>
                             <SortLanguage
-                                activeClass={activeClass === language ? activeClass : null}
+                                activeClass={searchActive(language)}
                                 key={id} 
                                 onClick={() => filterWorks(language)}
                             >   {language}
