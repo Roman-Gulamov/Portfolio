@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 
 export const HeaderWrapper = styled.header`
@@ -51,18 +51,18 @@ export const NavWrapper = styled.ul`
         flex-direction: column;
         background: #5b78c7;
         clip-path: circle(10px at 90% -10%);
-        transition: all 1s ease-out;
+        transition: all 1.5s ease-out;
         pointer-events: none;
-    }
 
-    &.open {
-        clip-path: circle(1000px at 90% -10%);
-        pointer-events: all;
+        ${props => props.open && css`
+            clip-path: circle(1203px at 90% -10%);
+            pointer-events: all;
+        `}
     }
 `
 
 export const NavInvisible = styled.div`
-    &.open {
+    ${props => props.open && css`
         width: 100%;
         height: 48em;
         position: absolute;
@@ -71,29 +71,20 @@ export const NavInvisible = styled.div`
         background: black;
         cursor: pointer;
         z-index: -1;
-    }
+    `}
 `
 
-export const NavLogo = styled.h1`
+export const NavTitle = styled.h1`
     display: none;
 
     @media screen and (max-width: 768px) {
-        font-size: 1.6em;
         display: flex;
-        font-family: 'Architects Daughter';
         align-items: center;
-        margin-right: 1em;
+        font-size: 2em;
+        font-family: 'Architects Daughter';
         letter-spacing: 5px;
+        text-transform: capitalize;
         user-select: none;
-    }
-
-    @media screen and (max-width: 400px) {
-        font-size: 1.2em;
-        margin-right: 1.4em;
-    }
-
-    @media screen and (max-width: 281px) {
-        font-size: 0.9em;
     }
 `
 
