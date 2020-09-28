@@ -31,7 +31,7 @@ export const SortLanguage = styled.li`
         font-size: 0.6em;
     }
 
-    @media screen and (max-width: 290px) {
+    @media screen and (max-width: 400px) {
         padding: 1em;
     }
 
