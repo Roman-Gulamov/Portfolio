@@ -44,7 +44,7 @@ export const SKILLS_DATA = [
     {
         name: 'Styled-components',
         src: StyledComponents,
-        procent: '60%',
+        procent: '70%',
         background: '#FBA2D9'
     },
     {
