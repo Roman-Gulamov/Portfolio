@@ -16,6 +16,7 @@ import { Works } from './Works/Works';
 import { Resume } from './Resume/Resume';
 import { Feedback } from './Feedback/Feedback';
 
+
 export const App = () => {
     return (
         <>
@@ -33,7 +34,7 @@ export const App = () => {
             </Switch>
             
             <Footer />
-        </Router>    
+        </Router> 
         </>
     )
 }
