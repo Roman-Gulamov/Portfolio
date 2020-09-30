@@ -6,7 +6,7 @@ import { Formik, Form } from "formik";
 import { FormMap } from './FormMap/FormMap';
 import { LoginSchema } from './LoginSchema';
 import { goHome } from './goHome';
-import { Success, Error } from './SVG/PendingSVG';
+import { Success, Error } from './Svg/PendingSVG';
 
 import { Container } from '../../styles/Container';
 import { Button } from '../../styles/Button';
