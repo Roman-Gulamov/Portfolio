@@ -1,6 +1,7 @@
 import ReactImg from '../../assets/images/skills/ReactImg.png';
 import JavaScript from '../../assets/images/skills/JavaScript.png';
 import HTML from '../../assets/images/skills/HTML.png';
+import CSS from '../../assets/images/skills/CSS.png';
 import SCSS from '../../assets/images/skills/SCSS.png';
 import jQuery from '../../assets/images/skills/jQuery.png';
 import StyledComponents from '../../assets/images/skills/styled-components.png';
@@ -16,6 +17,12 @@ export const SKILLS_DATA = [
         src: HTML,
         procent: '99%',
         background: '#D1382B'
+    },
+    {
+        name: 'CSS3',
+        src: CSS,
+        procent: '99%',
+        background: '#379AD6'
     },
     {
         name: 'SCSS',
@@ -62,13 +69,13 @@ export const SKILLS_DATA = [
     {
         name: 'TypeScript',
         src: TypeScript,
-        procent: '35%',
+        procent: '40%',
         background: '#295FBE'
     },
     {
         name: 'PHP',
         src: PHP,
-        procent: '10%',
+        procent: '20%',
         background: '#8A94BF'
     },
 ]
