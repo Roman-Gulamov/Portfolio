@@ -41,12 +41,14 @@ export const NavWrapper = styled.ul`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    margin-left: 2em;
     z-index: 1;
 
     @media screen and (max-width: 768px) {
         position: fixed;
         height: 60vh;
         width: 100%;
+        margin-left: 0;
         align-items: center;
         flex-direction: column;
         background: #5b78c7;
