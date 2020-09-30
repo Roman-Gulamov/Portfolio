@@ -1,15 +1,6 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
+import { progress } from './keyframes';
 
-const progress = (props) => { 
-    return keyframes`
-        from {
-            width: 10%;
-        }
-        to {
-            width: ${props.procent || '0%'};
-        }
-    `
-}
 
 export const SkillsWrapper = styled.main`
     height: 100%;
