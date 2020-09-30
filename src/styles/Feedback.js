@@ -1,69 +1,11 @@
-import styled, { keyframes, css } from 'styled-components';
+import styled, { css } from 'styled-components';
+import { 
+    rotate, 
+    stroke, 
+    scale, 
+    fill,
+    circle } from './keyframes';
 
-const loading = () => { 
-    return keyframes`
-        100% {
-            transform: rotate(360deg);
-        }
-    `
-} //! Перенеси все кеймфреймы в отдельный файл и то же самое сделай с свгшками
-
-const stroke = () => { 
-    return keyframes`
-        100% {
-            stroke-dashoffset: 0;
-        }
-    `
-}
-
-const scale = () => { 
-    return keyframes`
-        0%, 100% {
-            transform: none;
-        }
-
-        50% {
-            transform: scale3d(1.1, 1.1, 1);
-        }
-    `
-}
-
-const fill = () => { 
-    return keyframes`
-        100% {
-            box-shadow: inset 0px 0px 0px 30px #4bb71b;
-        }
-    `
-}
-
-const errorLine = () => { 
-    return keyframes`
-        0% { 
-            stroke-dashoffset: 0; 
-        }
-    `
-}
-
-const errorCircle = () => { 
-    return keyframes`
-        0% {
-            stroke-dasharray: 0, 260.75219024795285px;
-            stroke-dashoffset: 0;
-        }
-        35% {
-            stroke-dasharray: 120px, 120px;
-            stroke-dashoffset: -120px;
-        }
-        70% {
-            stroke-dasharray: 0, 260.75219024795285px;
-            stroke-dashoffset: -260.75219024795285px;
-        }
-        100% {
-            stroke-dasharray: 260.75219024795285px, 0;
-            stroke-dashoffset: -260.75219024795285px;
-        }
-    `
-}
 
 export const FeedbackWrapper = styled.main`
     margin: 1.2em 0em 15vh;
@@ -129,17 +71,26 @@ export const FormLabel = styled.label`
 export const FormPending = styled.div`
     display: none;
     position: absolute;
-    top: 25%;
-    left: 30%;
+    top: 20%;
+    left: 27%;
+
+    
+    @media screen and (max-width: 500px) {
+        left: 19%;
+    }
+
+    @media screen and (max-width: 400px) {
+        left: 17%;
+    }
 
     ${props => props.loading && css`
         display: block;
-        width: 8em;
-        height: 8em;
+        width: 9em;
+        height: 9em;
         border: 12px solid white;
         border-top-color: #5b78c7;
         border-radius: 100%;
-        animation: ${loading} linear .7s infinite;
+        animation: ${rotate} linear .7s infinite;
     `}
 
     ${props => props.success && css`
@@ -151,9 +102,10 @@ export const FormPending = styled.div`
     `}
 ` 
 
+//? ------------------------ Success ------------------------ ?//
 export const PendingSuccess = styled.svg`
-    width: 100px;
-    height: 100px;
+    width: 9em;
+    height: auto;
     border-radius: 50%;
     display: block;
     stroke-width: 2;
@@ -183,21 +135,30 @@ export const SuccessCheck = styled.path`
     stroke-dashoffset: 48;
     animation: ${stroke} 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
 ` 
+//? ------------------------ Success ------------------------ ?//
 
+
+//! ------------------------ Error ---------------- !//
+export const PendingError = styled.svg`
+    width: 9em;
+    height: auto;
+` 
 
 export const ErrorCircle = styled.circle`
     stroke-dasharray: 260.75219024795285px, 260.75219024795285px;
 	stroke-dashoffset: 260.75219024795285px;
-	animation: ${errorCircle} 1.5s cubic-bezier(0.65, 0, 0.45, 1);
+	animation: ${circle} 1.5s cubic-bezier(0.65, 0, 0.45, 1);
+    fill: #fff;
 ` 
 
 export const ErrorLine = styled.path`
 	stroke-dasharray: 54px 55px;
 	stroke-dashoffset: 55px;
 	stroke-linecap: round;
-    animation: ${errorLine} .15s 1.5s cubic-bezier(0.65, 0, 0.45, 1) both;
+    animation: ${stroke} .15s 1.5s cubic-bezier(0.65, 0, 0.45, 1) both;
     
     ${props => props.two && css`
-        animation: ${errorLine} .2s 1s cubic-bezier(0.65, 0, 0.45, 1) both;
+        animation: ${stroke} .2s 1s cubic-bezier(0.65, 0, 0.45, 1) both;
     `}
 ` 
+//! ------------------------ Error ---------------- !//
