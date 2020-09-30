@@ -51,7 +51,7 @@ export const NavWrapper = styled.ul`
         flex-direction: column;
         background: #5b78c7;
         clip-path: circle(10px at 90% -10%);
-        transition: all 1.5s ease-out;
+        transition: all 1.2s ease-out;
         pointer-events: none;
 
         ${props => props.open && css`
