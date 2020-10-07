@@ -11,7 +11,8 @@ import {
     ProfileInformation,
     InformationName,
     InformationPosition,
-    InformationAbout
+    InformationAbout,
+    AboutGreeting
 } from '../../styles/Profile';
 
 import Roman from '../../assets/images/profile/Roman.jpg';
@@ -39,7 +40,9 @@ export const Profile = () => {
                         </InformationPosition>
                     </InformationName>
                     <InformationAbout>
-                        <span role="img" aria-label="give-five">Hello! &#128588;</span> {'\n'}
+                        <AboutGreeting>
+                            <span role="img" aria-label="give-five">Hello! &#128588;</span> {'\n'}
+                        </AboutGreeting>
                         <span role="img" aria-label="give-five">
                             I am Roman Gulamov, Front-end Developer from Saint Petersburg &#127969;
                         </span> {'\n'}  
