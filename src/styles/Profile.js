@@ -61,15 +61,14 @@ export const InformationPosition = styled.span`
     margin-bottom: 1em;
 ` 
 
-export const InformationAbout = styled.p`
-    position: relative;
+export const InformationAbout = styled.div`
     white-space: pre-line;
     line-height: 1.6;
+`
 
-    & span:first-child  {
-        @media screen and (max-width: 768px) {
-            position: absolute;
-            left: 40%;
-        }
+export const AboutGreeting = styled.p`
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        line-height: 1.7;
     }
 `
