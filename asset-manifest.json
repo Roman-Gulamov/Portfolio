@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.8a223549.chunk.css",
-    "main.js": "/Portfolio/static/js/main.75edd86c.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.75edd86c.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.e005a016.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.e005a016.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
-    "static/js/2.7d425314.chunk.js": "/Portfolio/static/js/2.7d425314.chunk.js",
-    "static/js/2.7d425314.chunk.js.map": "/Portfolio/static/js/2.7d425314.chunk.js.map",
+    "static/js/2.d33e214d.chunk.js": "/Portfolio/static/js/2.d33e214d.chunk.js",
+    "static/js/2.d33e214d.chunk.js.map": "/Portfolio/static/js/2.d33e214d.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.221ac4c240c326222afcf65d954ddf83.js": "/Portfolio/precache-manifest.221ac4c240c326222afcf65d954ddf83.js",
+    "precache-manifest.0f7d49d13be421b439a0f851dceada8b.js": "/Portfolio/precache-manifest.0f7d49d13be421b439a0f851dceada8b.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/main.8a223549.chunk.css.map": "/Portfolio/static/css/main.8a223549.chunk.css.map",
-    "static/js/2.7d425314.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.7d425314.chunk.js.LICENSE.txt",
+    "static/js/2.d33e214d.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.d33e214d.chunk.js.LICENSE.txt",
     "static/media/CSS.png": "/Portfolio/static/media/CSS.095a6ad7.png",
     "static/media/Gulp.png": "/Portfolio/static/media/Gulp.1c140acf.png",
     "static/media/Leo.png": "/Portfolio/static/media/Leo.82e8affa.png",
     "static/media/PHP.png": "/Portfolio/static/media/PHP.5bd7d39e.png",
+    "static/media/PhotoGallery.png": "/Portfolio/static/media/PhotoGallery.18aa8c30.png",
     "static/media/Rapture.png": "/Portfolio/static/media/Rapture.a8e168a4.png",
     "static/media/ReactImg.png": "/Portfolio/static/media/ReactImg.61a7eeee.png",
     "static/media/Roman.jpg": "/Portfolio/static/media/Roman.3bbfb212.jpg",
@@ -31,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
-    "static/js/2.7d425314.chunk.js",
+    "static/js/2.d33e214d.chunk.js",
     "static/css/main.8a223549.chunk.css",
-    "static/js/main.75edd86c.chunk.js"
+    "static/js/main.e005a016.chunk.js"
   ]
 }
