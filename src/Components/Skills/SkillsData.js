@@ -4,10 +4,11 @@ import HTML from '../../assets/images/skills/HTML.png';
 import CSS from '../../assets/images/skills/CSS.png';
 import SCSS from '../../assets/images/skills/SCSS.png';
 import jQuery from '../../assets/images/skills/jQuery.png';
-import StyledComponents from '../../assets/images/skills/styled-components.png';
+import StyledComponents from '../../assets/images/skills/Styled-components.png';
+import NextJs from '../../assets/images/skills/NextJs.svg'
+import TypeScript from '../../assets/images/skills/TypeScript.png';
 import Webpack from '../../assets/images/skills/Webpack.png';
 import Gulp from '../../assets/images/skills/Gulp.png';
-import TypeScript from '../../assets/images/skills/TypeScript.png';
 import PHP from '../../assets/images/skills/PHP.png';
 
 
@@ -51,13 +52,25 @@ export const SKILLS_DATA = [
     {
         name: 'Styled-components',
         src: StyledComponents,
-        procent: '70%',
+        procent: '80%',
         background: '#FBA2D9'
+    },
+    {
+        name: 'Next.js',
+        src: NextJs,
+        procent: '65%',
+        background: '#000'
+    },
+    {
+        name: 'TypeScript',
+        src: TypeScript,
+        procent: '55%',
+        background: '#295FBE'
     },
     {
         name: 'Webpack',
         src: Webpack,
-        procent: '55%',
+        procent: '50%',
         background: '#0D3B84'
     },
     {
@@ -65,12 +78,6 @@ export const SKILLS_DATA = [
         src: Gulp,
         procent: '50%',
         background: '#D44B48'
-    },
-    {
-        name: 'TypeScript',
-        src: TypeScript,
-        procent: '40%',
-        background: '#295FBE'
     },
     {
         name: 'PHP',
