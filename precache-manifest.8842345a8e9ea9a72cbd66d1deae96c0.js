@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "77a5c47387133577be48d98cb072c126",
+    "revision": "5d3002b4ee7c9443165c61ee801ffc0f",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "56f953703bbc0c7a39d9",
+    "revision": "b9c5aa6968841e382a1b",
     "url": "/Portfolio/static/css/main.8a223549.chunk.css"
   },
   {
-    "revision": "2304193e031f8a3211b3",
-    "url": "/Portfolio/static/js/2.d33e214d.chunk.js"
+    "revision": "47dc08c81ec629d10db7",
+    "url": "/Portfolio/static/js/2.b9dc4058.chunk.js"
   },
   {
     "revision": "77e7f328dacc981fca681ee4ae94d669",
-    "url": "/Portfolio/static/js/2.d33e214d.chunk.js.LICENSE.txt"
+    "url": "/Portfolio/static/js/2.b9dc4058.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "56f953703bbc0c7a39d9",
-    "url": "/Portfolio/static/js/main.29a71055.chunk.js"
+    "revision": "b9c5aa6968841e382a1b",
+    "url": "/Portfolio/static/js/main.d373232e.chunk.js"
   },
   {
     "revision": "b83a37198ba343383876",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "82e8affa583a898969b61b39bc926f47",
     "url": "/Portfolio/static/media/Leo.82e8affa.png"
+  },
+  {
+    "revision": "b5d25ca3c0decaea251b75c69a934e8b",
+    "url": "/Portfolio/static/media/NextJs.b5d25ca3.svg"
   },
   {
     "revision": "5bd7d39e5ba3444067196224c074e1e1",
@@ -58,6 +62,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "380e22e306f5f0e7ceb6077715651b76",
     "url": "/Portfolio/static/media/SCSS.380e22e3.png"
+  },
+  {
+    "revision": "f08ed25aa9c9762d41576f8cc0f9ee60",
+    "url": "/Portfolio/static/media/Startup.f08ed25a.png"
+  },
+  {
+    "revision": "94e9f4fd2dda02c3d47d7f056367776e",
+    "url": "/Portfolio/static/media/Styled-components.94e9f4fd.png"
   },
   {
     "revision": "90ee7b16de79082112302138a2b98d7b",
@@ -122,9 +134,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "daaecf107feb2573b79afd881376d20a",
     "url": "/Portfolio/static/media/kufam-v2-latin-ext_latin-regular.daaecf10.svg"
-  },
-  {
-    "revision": "94e9f4fd2dda02c3d47d7f056367776e",
-    "url": "/Portfolio/static/media/styled-components.94e9f4fd.png"
   }
 ]);
