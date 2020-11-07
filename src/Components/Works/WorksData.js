@@ -4,6 +4,7 @@ import Rapture from '../../assets/images/works/Rapture.png';
 import Subjects from '../../assets/images/works/Subjects.png';
 import TypeScriptForm from '../../assets/images/works/TypeScriptForm.png';
 import TicTac from '../../assets/images/works/TicTac.png';
+import UserProfile from '../../assets/images/works/UserProfile.png';
 import Leo from '../../assets/images/works/Leo.png';
 import PhotoGallery from '../../assets/images/works/PhotoGallery.png';
 
@@ -47,20 +48,27 @@ export const WORKS_DATA = [
     },
     {
         id: '6',
+        img: UserProfile,
+        git: 'https://github.com/Roman-Gulamov/user-profile',
+        ghPages: 'https://roman-gulamov.github.io/user-profile',
+        languageName: 'React/Styled-components'
+    },
+    {
+        id: '7',
         img: TicTac,
         git: 'https://github.com/Roman-Gulamov/Tic-tac-toe',
         ghPages: 'https://roman-gulamov.github.io/Tic-tac-toe',
         languageName: 'React/SCSS'
     },
     {
-        id: '7',
+        id: '8',
         img: Leo,
         git: 'https://github.com/Roman-Gulamov/Leo',
         ghPages: null,
         languageName: 'HTML/SCSS/jQuery/Webpack'
     },
     {
-        id: '8',
+        id: '9',
         img: PhotoGallery,
         git: 'https://github.com/Roman-Gulamov/Photogallery',
         ghPages: 'https://roman-gulamov.github.io/Photogallery/#/users',
