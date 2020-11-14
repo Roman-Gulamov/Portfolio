@@ -6,6 +6,7 @@ import TypeScriptForm from '../../assets/images/works/TypeScriptForm.png';
 import TicTac from '../../assets/images/works/TicTac.png';
 import UserProfile from '../../assets/images/works/UserProfile.png';
 import Leo from '../../assets/images/works/Leo.png';
+import LiveJournal from '../../assets/images/works/LiveJournal.png';
 import PhotoGallery from '../../assets/images/works/PhotoGallery.png';
 
 
@@ -34,10 +35,10 @@ export const WORKS_DATA = [
     },
     {
         id: '4',
-        img: Subjects,
-        git: 'https://github.com/Roman-Gulamov/Subjects',
-        ghPages: 'https://roman-gulamov.github.io/Subjects',
-        languageName: 'React/SCSS'
+        img: UserProfile,
+        git: 'https://github.com/Roman-Gulamov/user-profile',
+        ghPages: 'https://roman-gulamov.github.io/user-profile',
+        languageName: 'React/Styled-components'
     },
     {
         id: '5',
@@ -48,24 +49,24 @@ export const WORKS_DATA = [
     },
     {
         id: '6',
-        img: UserProfile,
-        git: 'https://github.com/Roman-Gulamov/user-profile',
-        ghPages: 'https://roman-gulamov.github.io/user-profile',
-        languageName: 'React/Styled-components'
-    },
-    {
-        id: '7',
-        img: TicTac,
-        git: 'https://github.com/Roman-Gulamov/Tic-tac-toe',
-        ghPages: 'https://roman-gulamov.github.io/Tic-tac-toe',
+        img: Subjects,
+        git: 'https://github.com/Roman-Gulamov/Subjects',
+        ghPages: 'https://roman-gulamov.github.io/Subjects',
         languageName: 'React/SCSS'
     },
     {
-        id: '8',
+        id: '7',
         img: Leo,
         git: 'https://github.com/Roman-Gulamov/Leo',
         ghPages: null,
         languageName: 'HTML/SCSS/jQuery/Webpack'
+    },
+    {
+        id: '8',
+        img: LiveJournal,
+        git: 'https://github.com/Roman-Gulamov/ListOfPosts',
+        ghPages: 'https://roman-gulamov.github.io/ListOfPosts',
+        languageName: 'React/Styled-components'
     },
     {
         id: '9',
@@ -74,6 +75,13 @@ export const WORKS_DATA = [
         ghPages: 'https://roman-gulamov.github.io/Photogallery/#/users',
         languageName: 'React/Styled-components'
     },
+    {
+        id: '10',
+        img: TicTac,
+        git: 'https://github.com/Roman-Gulamov/Tic-tac-toe',
+        ghPages: 'https://roman-gulamov.github.io/Tic-tac-toe',
+        languageName: 'React/SCSS'
+    }
 ]
 
 
