@@ -19,7 +19,7 @@ export const SOCIAL_LINKS = [
     },
     {
         name: 'linkedIn',
-        path: 'https://www.linkedin.com/in/роман-гуламов-5712b31b2/',
+        path: 'https://www.linkedin.com/in/роман-гуламов/',
         icon: faLinkedin,
     }
 ]
