@@ -25,11 +25,11 @@ export const App = () => {
             <Header />
             
             <Switch>
-                <Route path='/profile' component={Profile}/>
-                <Route path='/skills' component={Skills}/>
-                <Route path='/works' component={Works}/>
-                <Route path='/resume' component={Resume}/>
-                <Route path='/contact' component={Feedback}/>
+                <Route exact path='/profile' component={Profile}/>
+                <Route exact path='/skills' component={Skills}/>
+                <Route exact path='/works' component={Works}/>
+                <Route exact path='/resume' component={Resume}/>
+                <Route exact path='/contact' component={Feedback}/>
                 <Redirect to="/profile" />
             </Switch>
             
