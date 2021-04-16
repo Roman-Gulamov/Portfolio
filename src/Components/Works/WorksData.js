@@ -8,6 +8,7 @@ import UserProfile from '../../assets/images/works/UserProfile.png';
 import Leo from '../../assets/images/works/Leo.png';
 import LiveJournal from '../../assets/images/works/LiveJournal.png';
 import PhotoGallery from '../../assets/images/works/PhotoGallery.png';
+import BuhOne from '../../assets/images/works/BuhOne.png';
 
 
 
@@ -81,6 +82,13 @@ export const WORKS_DATA = [
         git: 'https://github.com/Roman-Gulamov/Tic-tac-toe',
         ghPages: 'https://roman-gulamov.github.io/Tic-tac-toe',
         languageName: 'React/SCSS'
+    },
+    {
+        id: '11',
+        img: BuhOne,
+        git: 'https://github.com/Roman-Gulamov/Buhone',
+        ghPages: 'https://roman-gulamov.github.io/Buhone',
+        languageName: 'React/Styled-components'
     }
 ]
 
