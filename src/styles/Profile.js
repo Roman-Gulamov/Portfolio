@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { bounceInLeftAnimations } from './keyframes';
 
 
 export const ProfileWrapper = styled.main`
@@ -6,6 +7,7 @@ export const ProfileWrapper = styled.main`
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 1.8em 0em 15vh;
+    animation: 1.2s linear ${bounceInLeftAnimations};
 ` 
 
 export const ProfileImage = styled.div`

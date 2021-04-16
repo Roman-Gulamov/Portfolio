@@ -14,10 +14,10 @@ import {
 } from '../../styles/Works';
 
 
-export const WorksMap = ({ worksData }) => {
+export const WorksMap = ({ worksData, animation }) => {
     return (
         worksData.map(({ id, img, git, ghPages, languageName }) =>
-            <ExamplesItem key={id}>
+            <ExamplesItem key={id} animation={animation}>
                 <ItemImg src={img} alt={languageName} />
                 <ItemDescription>
                     <DescriptionProject>

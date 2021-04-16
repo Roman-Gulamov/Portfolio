@@ -17,12 +17,18 @@ import {
 export const Works = () => {
     const [newData, setNewData] = useState(WORKS_DATA);
     const [activeClass, setActiveClass] = useState('');
+    const [animation, setAnimation] = useState(true);
     const worksData = WORKS_DATA;
 
     const filterWorks = (language) => {
         setActiveClass(language);
         setNewData([]);
+        setAnimation(false);
 
+        setTimeout(() => {
+            setAnimation(true);
+        }, 1);
+        
         worksData.map((data) => {
             const languageName = data.languageName.split('/');
 
@@ -43,7 +49,6 @@ export const Works = () => {
             return activeClass
         }
     }
-
     
     return (
         <>
@@ -68,7 +73,7 @@ export const Works = () => {
                     </SortWrapper>
                 </WorksSort>
                 <WorksExamples>
-                    <WorksMap worksData={newData} />
+                    <WorksMap worksData={newData} animation={animation} />
                 </WorksExamples>
                 </Container>
             </WorksWrapper>

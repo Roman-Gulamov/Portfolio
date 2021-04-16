@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { fadeInAnimations } from './keyframes';
 
 
 export const ResumeWrapper = styled.main`
@@ -8,6 +9,7 @@ export const ResumeWrapper = styled.main`
     align-items: center;
     justify-content: space-around;
     margin: 1.8em 0em 15vh;
+    animation: 1s linear ${fadeInAnimations};
 ` 
 
 export const ResumeTitle = styled.h2`

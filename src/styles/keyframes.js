@@ -1,5 +1,18 @@
 import { keyframes } from 'styled-components';
+import { rollIn, bounceInLeft, fadeIn } from 'react-animations';
 
+
+export const rollInAnimations = keyframes`
+    ${rollIn}
+`;
+
+export const bounceInLeftAnimations = keyframes`
+    ${bounceInLeft}
+`;
+
+export const fadeInAnimations = keyframes`
+    ${fadeIn}
+`;
 
 export const progress = (props) => { 
     return keyframes`
@@ -11,7 +24,6 @@ export const progress = (props) => {
         }
     `
 }
-
 
 export const rotate = () => { 
     return keyframes`

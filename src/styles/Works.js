@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { rollInAnimations } from './keyframes';
 
 
 export const WorksWrapper = styled.main`
@@ -52,6 +53,11 @@ export const ExamplesItem = styled.div`
     height: auto;
     margin: 1em;
     cursor: pointer;
+
+    ${props => props.animation && css`
+        animation: .8s linear ${rollInAnimations};
+        animation-fill-mode: forwards;
+    `}
 ` 
 
 export const ItemImg = styled.img`
