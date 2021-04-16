@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { 
+    fadeInAnimations,
     rotate, 
     stroke, 
     scale, 
@@ -9,6 +10,7 @@ import {
 
 export const FeedbackWrapper = styled.main`
     margin: 1.2em 0em 15vh;
+    animation: 1s linear ${fadeInAnimations};
 ` 
 
 export const FeedbackForm = styled.div`
