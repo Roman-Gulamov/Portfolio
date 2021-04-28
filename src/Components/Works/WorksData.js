@@ -8,6 +8,7 @@ import UserProfile from '../../assets/images/works/UserProfile.png';
 import Leo from '../../assets/images/works/Leo.png';
 import LiveJournal from '../../assets/images/works/LiveJournal.png';
 import PhotoGallery from '../../assets/images/works/PhotoGallery.png';
+import SortableTable from '../../assets/images/works/SortableTable.png';
 import BuhOne from '../../assets/images/works/BuhOne.png';
 
 
@@ -85,6 +86,13 @@ export const WORKS_DATA = [
     },
     {
         id: '11',
+        img: SortableTable,
+        git: 'https://github.com/Roman-Gulamov/SortableTable',
+        ghPages: null,
+        languageName: 'React/Node.js/MySQL'
+    },
+    {
+        id: '12',
         img: BuhOne,
         git: 'https://github.com/Roman-Gulamov/Buhone',
         ghPages: 'https://roman-gulamov.github.io/Buhone',

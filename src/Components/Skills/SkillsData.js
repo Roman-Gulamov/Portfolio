@@ -9,6 +9,8 @@ import NextJs from '../../assets/images/skills/NextJs.svg'
 import TypeScript from '../../assets/images/skills/TypeScript.png';
 import Webpack from '../../assets/images/skills/Webpack.png';
 import Gulp from '../../assets/images/skills/Gulp.png';
+import MySQL from '../../assets/images/skills/MySQL.png';
+import NodeJs from '../../assets/images/skills/NodeJs.png';
 import PHP from '../../assets/images/skills/PHP.png';
 
 
@@ -38,6 +40,12 @@ export const SKILLS_DATA = [
         background: '#0867AB'
     },
     {
+        name: 'Styled-components',
+        src: StyledComponents,
+        procent: '85%',
+        background: '#FBA2D9'
+    },
+    {
         name: 'React',
         src: ReactImg,
         procent: '80%',
@@ -50,12 +58,6 @@ export const SKILLS_DATA = [
         background: '#FFCA28'
     },
     {
-        name: 'Styled-components',
-        src: StyledComponents,
-        procent: '80%',
-        background: '#FBA2D9'
-    },
-    {
         name: 'Next.js',
         src: NextJs,
         procent: '65%',
@@ -64,8 +66,14 @@ export const SKILLS_DATA = [
     {
         name: 'TypeScript',
         src: TypeScript,
-        procent: '55%',
+        procent: '60%',
         background: '#295FBE'
+    },
+    {
+        name: 'MySQL',
+        src: MySQL,
+        procent: '50%',
+        background: '#00608C'
     },
     {
         name: 'Webpack',
@@ -78,6 +86,12 @@ export const SKILLS_DATA = [
         src: Gulp,
         procent: '50%',
         background: '#D44B48'
+    },
+    {
+        name: 'Node.js',
+        src: NodeJs,
+        procent: '35%',
+        background: '#83CD29'
     },
     {
         name: 'PHP',
