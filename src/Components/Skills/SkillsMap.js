@@ -16,8 +16,8 @@ import {
 export const SkillsMap = () => {
     return (
         <>
-        {SKILLS_DATA.map(({ name, src, procent, background }) =>
-            <SkillsItem key={name}>
+        {SKILLS_DATA.map(({ id, name, src, procent, background }) =>
+            <SkillsItem key={id}>
                 <SkillsImg>
                     <ImgLanguage src={src} alt={name}/>
                 </SkillsImg>
