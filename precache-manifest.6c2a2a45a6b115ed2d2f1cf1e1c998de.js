@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "008349e397c8a1bcfd1a44e02b4e4c7c",
+    "revision": "a7fe5d809b32305ad618d9d16abbd9fd",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "9f7ea7745759453b228f",
+    "revision": "ba9b8543426d3f3465ef",
     "url": "/Portfolio/static/css/main.8a223549.chunk.css"
   },
   {
@@ -16,36 +16,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/js/2.bd868c00.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9f7ea7745759453b228f",
-    "url": "/Portfolio/static/js/main.98a45818.chunk.js"
+    "revision": "ba9b8543426d3f3465ef",
+    "url": "/Portfolio/static/js/main.c8e2dd65.chunk.js"
   },
   {
     "revision": "b83a37198ba343383876",
     "url": "/Portfolio/static/js/runtime-main.e440ee5a.js"
   },
   {
-    "revision": "fb806797525cfb9084dfbd4b2cc47845",
-    "url": "/Portfolio/static/media/BuhOne.fb806797.png"
+    "revision": "ae5a3bf2277178335eab6b224635567e",
+    "url": "/Portfolio/static/media/BuhOne.ae5a3bf2.png"
   },
   {
     "revision": "095a6ad7bccd1326b7780c0575377619",
     "url": "/Portfolio/static/media/CSS.095a6ad7.png"
   },
   {
-    "revision": "439c6c6d471a08916d37654db89a649b",
-    "url": "/Portfolio/static/media/FavoriteUsers.439c6c6d.png"
+    "revision": "d4b5eed874eba75daa0ff38f13068b38",
+    "url": "/Portfolio/static/media/FavoriteUsers.d4b5eed8.png"
   },
   {
     "revision": "1c140acf6045592cf18946b895b9e2d8",
     "url": "/Portfolio/static/media/Gulp.1c140acf.png"
   },
   {
-    "revision": "82e8affa583a898969b61b39bc926f47",
-    "url": "/Portfolio/static/media/Leo.82e8affa.png"
+    "revision": "e313db4d23f813fb0741ff4b35acb388",
+    "url": "/Portfolio/static/media/Leo.e313db4d.png"
   },
   {
-    "revision": "e56a9349f2778ea983e4d51d025de1c4",
-    "url": "/Portfolio/static/media/LiveJournal.e56a9349.png"
+    "revision": "5708d6a606b4d397e5399b62b19adb89",
+    "url": "/Portfolio/static/media/LiveJournal.5708d6a6.png"
   },
   {
     "revision": "dac6b76aab592862299554bfeb301eef",
@@ -68,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/PhotoGallery.b3eac447.png"
   },
   {
-    "revision": "a8e168a4ff324cfffa36158e560998ac",
-    "url": "/Portfolio/static/media/Rapture.a8e168a4.png"
+    "revision": "e306e142830974a8883c7f1ac6830148",
+    "url": "/Portfolio/static/media/Rapture.e306e142.png"
   },
   {
     "revision": "61a7eeee285cd4b16e3f86b37ab01ae3",
@@ -84,36 +84,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/SCSS.380e22e3.png"
   },
   {
-    "revision": "85e4409db76ace9f1af89ca6da053e98",
-    "url": "/Portfolio/static/media/SortableTable.85e4409d.png"
+    "revision": "70fa6a514b3022f226573ba51f4618d0",
+    "url": "/Portfolio/static/media/SortableTable.70fa6a51.png"
   },
   {
-    "revision": "f08ed25aa9c9762d41576f8cc0f9ee60",
-    "url": "/Portfolio/static/media/Startup.f08ed25a.png"
+    "revision": "baa07bbdb139981773e6fb23cab9d1c9",
+    "url": "/Portfolio/static/media/Startup.baa07bbd.png"
   },
   {
     "revision": "94e9f4fd2dda02c3d47d7f056367776e",
     "url": "/Portfolio/static/media/Styled-components.94e9f4fd.png"
   },
   {
-    "revision": "90ee7b16de79082112302138a2b98d7b",
-    "url": "/Portfolio/static/media/Subjects.90ee7b16.png"
+    "revision": "29e1553322afc967189b74ce608e7a46",
+    "url": "/Portfolio/static/media/Subjects.29e15533.png"
   },
   {
-    "revision": "274dcb1a014586d5645f1ff18d5c8b1c",
-    "url": "/Portfolio/static/media/TicTac.274dcb1a.png"
+    "revision": "ad14aeadfe999e77dc5803a60b79e4a1",
+    "url": "/Portfolio/static/media/TrainsAggregator.ad14aead.png"
   },
   {
-    "revision": "232e28007eb95e01cdaf76993a26e1e8",
-    "url": "/Portfolio/static/media/TrainsAggregator.232e2800.png"
+    "revision": "02e380aa13e05649136bbe5e42a899e3",
+    "url": "/Portfolio/static/media/TypeScriptForm.02e380aa.png"
   },
   {
-    "revision": "609ac3b920b5e24040fafd63bb2a644c",
-    "url": "/Portfolio/static/media/TypeScriptForm.609ac3b9.png"
-  },
-  {
-    "revision": "7ae2f6fcdbe74dc2336efd71f12b6107",
-    "url": "/Portfolio/static/media/UserProfile.7ae2f6fc.png"
+    "revision": "73571b5d0134085a47ac322b98c88aa8",
+    "url": "/Portfolio/static/media/UserProfile.73571b5d.png"
   },
   {
     "revision": "38eee64101a7765d306b5eb1d9622702",
