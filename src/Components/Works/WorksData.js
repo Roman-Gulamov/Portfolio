@@ -6,6 +6,7 @@ import TypeScriptForm from '../../assets/images/works/TypeScriptForm.png';
 import TicTac from '../../assets/images/works/TicTac.png';
 import UserProfile from '../../assets/images/works/UserProfile.png';
 import Leo from '../../assets/images/works/Leo.png';
+import FavoriteUsers from '../../assets/images/works/FavoriteUsers.png';
 import LiveJournal from '../../assets/images/works/LiveJournal.png';
 import PhotoGallery from '../../assets/images/works/PhotoGallery.png';
 import SortableTable from '../../assets/images/works/SortableTable.png';
@@ -23,10 +24,10 @@ export const WORKS_DATA = [
     },
     {
         id: '2',
-        img: TrainsAggregator,
-        git: 'https://github.com/Roman-Gulamov/train-search',
-        ghPages: 'https://roman-gulamov.github.io/train-search',
-        languageName: 'React/SCSS'
+        img: FavoriteUsers,
+        git: 'https://github.com/Roman-Gulamov/FavoriteUsers',
+        ghPages: 'https://roman-gulamov.github.io/FavoriteUsers',
+        languageName: 'TypeScript/React'
     },
     {
         id: '3',
@@ -44,60 +45,67 @@ export const WORKS_DATA = [
     },
     {
         id: '5',
-        img: TypeScriptForm,
-        git: 'https://github.com/Roman-Gulamov/axiosform',
-        ghPages: null,
-        languageName: 'TypeScript/React/PHP'
-    },
-    {
-        id: '6',
-        img: Subjects,
-        git: 'https://github.com/Roman-Gulamov/Subjects',
-        ghPages: 'https://roman-gulamov.github.io/Subjects',
-        languageName: 'React/SCSS'
-    },
-    {
-        id: '7',
-        img: Leo,
-        git: 'https://github.com/Roman-Gulamov/Leo',
-        ghPages: null,
-        languageName: 'HTML/SCSS/jQuery/Webpack'
-    },
-    {
-        id: '8',
-        img: LiveJournal,
-        git: 'https://github.com/Roman-Gulamov/ListOfPosts',
-        ghPages: 'https://roman-gulamov.github.io/ListOfPosts',
-        languageName: 'React/Styled-components'
-    },
-    {
-        id: '9',
-        img: PhotoGallery,
-        git: 'https://github.com/Roman-Gulamov/Photogallery',
-        ghPages: 'https://roman-gulamov.github.io/Photogallery/#/users',
-        languageName: 'React/Styled-components'
-    },
-    {
-        id: '10',
-        img: TicTac,
-        git: 'https://github.com/Roman-Gulamov/Tic-tac-toe',
-        ghPages: 'https://roman-gulamov.github.io/Tic-tac-toe',
-        languageName: 'React/SCSS'
-    },
-    {
-        id: '11',
         img: SortableTable,
         git: 'https://github.com/Roman-Gulamov/SortableTable',
         ghPages: null,
         languageName: 'React/Node.js/MySQL'
     },
     {
-        id: '12',
+        id: '6',
+        img: TrainsAggregator,
+        git: 'https://github.com/Roman-Gulamov/train-search',
+        ghPages: 'https://roman-gulamov.github.io/train-search',
+        languageName: 'React/SCSS'
+    },
+    {
+        id: '7',
+        img: TypeScriptForm,
+        git: 'https://github.com/Roman-Gulamov/axiosform',
+        ghPages: null,
+        languageName: 'TypeScript/React/PHP'
+    },
+    {
+        id: '8',
         img: BuhOne,
         git: 'https://github.com/Roman-Gulamov/Buhone',
         ghPages: 'https://roman-gulamov.github.io/Buhone',
         languageName: 'React/Styled-components'
-    }
+    },
+    {
+        id: '9',
+        img: Leo,
+        git: 'https://github.com/Roman-Gulamov/Leo',
+        ghPages: null,
+        languageName: 'HTML/SCSS/jQuery/Webpack'
+    },
+    {
+        id: '10',
+        img: PhotoGallery,
+        git: 'https://github.com/Roman-Gulamov/Photogallery',
+        ghPages: 'https://roman-gulamov.github.io/Photogallery/#/users',
+        languageName: 'React/Styled-components'
+    },
+    {
+        id: '11',
+        img: TicTac,
+        git: 'https://github.com/Roman-Gulamov/Tic-tac-toe',
+        ghPages: 'https://roman-gulamov.github.io/Tic-tac-toe',
+        languageName: 'React/SCSS'
+    },
+    {
+        id: '12',
+        img: Subjects,
+        git: 'https://github.com/Roman-Gulamov/Subjects',
+        ghPages: 'https://roman-gulamov.github.io/Subjects',
+        languageName: 'React/SCSS'
+    },
+    {
+        id: '13',
+        img: LiveJournal,
+        git: 'https://github.com/Roman-Gulamov/ListOfPosts',
+        ghPages: 'https://roman-gulamov.github.io/ListOfPosts',
+        languageName: 'React/Styled-components'
+    },
 ]
 
 

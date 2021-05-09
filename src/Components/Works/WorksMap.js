@@ -10,7 +10,8 @@ import {
     DescriptionProject,
     ProjectTitle,
     ProjectLinks,
-    LinksGit
+    LinksItem,
+    ItemGit
 } from '../../styles/Works';
 
 
@@ -23,14 +24,18 @@ export const WorksMap = ({ worksData, animation }) => {
                     <DescriptionProject>
                         <ProjectTitle>{languageName}</ProjectTitle>
                         <ProjectLinks>
-                            <LinksGit href={git} target="_blank">
-                                <FontAwesomeIcon icon={faGithub} size="2x" />
-                            </LinksGit>
-                        {ghPages !== null ? 
-                            <LinksGit href={ghPages} target="_blank">
-                                <FontAwesomeIcon icon={faChrome} size="2x" />
-                            </LinksGit>
-                        : null}
+                            <LinksItem>
+                                <ItemGit href={git} target="_blank">
+                                    <FontAwesomeIcon icon={faGithub} size="2x" />
+                                </ItemGit>
+                            </LinksItem>
+                        {ghPages !== null &&
+                            <LinksItem>
+                                <ItemGit href={ghPages} target="_blank">
+                                    <FontAwesomeIcon icon={faChrome} size="2x" />
+                                </ItemGit>
+                            </LinksItem>
+                        }
                         </ProjectLinks>
                     </DescriptionProject>
                 </ItemDescription>
