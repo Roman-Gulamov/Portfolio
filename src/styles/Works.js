@@ -52,7 +52,6 @@ export const ExamplesItem = styled.div`
     width: 21em;
     height: auto;
     margin: 1em;
-    cursor: pointer;
 
     ${props => props.animation && css`
         animation: .8s linear ${rollInAnimations};
@@ -100,12 +99,14 @@ export const ProjectTitle = styled.h2`
 ` 
 
 export const ProjectLinks = styled.div`
-    margin-top: 1em;
+    display: inline-flex;
 `
 
-export const LinksGit = styled.a`
+export const LinksItem = styled.div`
     padding: 1em;
+`
 
+export const ItemGit = styled.a`
     & svg {
         transition: all .4s ease;
 
