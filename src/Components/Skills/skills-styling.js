@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import * as K from '../../styles/keyframes';
 
 
-export const SkillsWrapper = styled.main`
+export const SkillsWrapper = styled.ul`
     height: 100%;
     display: flex;
     flex-direction: column;
     margin: 0.8em 0 15vh;
 ` 
 
-export const SkillsItem = styled.div`
+export const SkillsItem = styled.li`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
