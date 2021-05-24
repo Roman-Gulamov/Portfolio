@@ -10,7 +10,7 @@ import { Success, Error } from './Svg/PendingSVG';
 
 import { Container } from '../../styles/Container';
 import { Button } from '../../styles/Button';
-import { FeedbackWrapper, FeedbackForm, FormPending } from '../../styles/Feedback';
+import * as S from './feedback-styling';
 
 
 export const Feedback = () => {
@@ -71,8 +71,8 @@ export const Feedback = () => {
             <link rel="canonical" href="https://roman-gulamov.github.io/Portfolio/#/contact" />
         </Helmet>
         <Container>
-            <FeedbackWrapper>
-                <FeedbackForm>
+            <S.FeedbackWrapper>
+                <S.FeedbackForm>
                     <Formik
                         initialValues={{ username: '', email: '', message: '' }}
                         validationSchema={LoginSchema}
@@ -90,15 +90,15 @@ export const Feedback = () => {
                             </Form>
                         )}
                     </Formik>
-                    <FormPending loading={loading}></FormPending>
-                    <FormPending success={success}>
+                    <S.FormPending loading={loading}></S.FormPending>
+                    <S.FormPending success={success}>
                         <Success />
-                    </FormPending>
-                    <FormPending error={error}>
+                    </S.FormPending>
+                    <S.FormPending error={error}>
                         <Error />
-                    </FormPending>
-                </FeedbackForm>
-            </FeedbackWrapper>
+                    </S.FormPending>
+                </S.FeedbackForm>
+            </S.FeedbackWrapper>
         </Container>
         </>
     )

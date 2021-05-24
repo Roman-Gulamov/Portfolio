@@ -3,43 +3,34 @@ import React from 'react';
 import { faGithub, faChrome } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import {
-    ExamplesItem,
-    ItemImg,
-    ItemDescription,
-    DescriptionProject,
-    ProjectTitle,
-    ProjectLinks,
-    LinksItem,
-    ItemGit
-} from '../../styles/Works';
+import * as S from './works-styling';
 
 
 export const WorksMap = ({ worksData, animation }) => {
     return (
         worksData.map(({ id, img, git, ghPages, languageName }) =>
-            <ExamplesItem key={id} animation={animation}>
-                <ItemImg src={img} alt={languageName} />
-                <ItemDescription>
-                    <DescriptionProject>
-                        <ProjectTitle>{languageName}</ProjectTitle>
-                        <ProjectLinks>
-                            <LinksItem>
-                                <ItemGit href={git} target="_blank">
+            <S.ExamplesItem key={id} animation={animation}>
+                <S.ItemImg src={img} alt={languageName} />
+                <S.ItemDescription>
+                    <S.DescriptionProject>
+                        <S.ProjectTitle>{languageName}</S.ProjectTitle>
+                        <S.ProjectLinks>
+                            <S.LinksItem>
+                                <S.ItemGit href={git} target="_blank">
                                     <FontAwesomeIcon icon={faGithub} size="2x" />
-                                </ItemGit>
-                            </LinksItem>
+                                </S.ItemGit>
+                            </S.LinksItem>
                         {ghPages !== null &&
-                            <LinksItem>
-                                <ItemGit href={ghPages} target="_blank">
+                            <S.LinksItem>
+                                <S.ItemGit href={ghPages} target="_blank">
                                     <FontAwesomeIcon icon={faChrome} size="2x" />
-                                </ItemGit>
-                            </LinksItem>
+                                </S.ItemGit>
+                            </S.LinksItem>
                         }
-                        </ProjectLinks>
-                    </DescriptionProject>
-                </ItemDescription>
-            </ExamplesItem>
+                        </S.ProjectLinks>
+                    </S.DescriptionProject>
+                </S.ItemDescription>
+            </S.ExamplesItem>
         )
     )
 }

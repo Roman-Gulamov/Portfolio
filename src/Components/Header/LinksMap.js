@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { NavItem } from '../../styles/Header';
+import * as S from './header-styling';
 
 import { faBriefcase, faUser, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
@@ -34,12 +34,12 @@ export const LinksMap = ({ toggleMenu }) => {
     return (
         <> 
         {NAV_LINKS.map(({ path, avatar, title }) =>
-            <NavItem key={title} onClick={toggleMenu}>
+            <S.NavItem key={title} onClick={toggleMenu}>
                 <NavLink to={path} activeStyle={{ background: '#203748' }}>
                     <FontAwesomeIcon icon={avatar} size="lg" />
                     <span>{title}</span>
                 </NavLink>
-            </NavItem>
+            </S.NavItem>
         )}
         </>
     )

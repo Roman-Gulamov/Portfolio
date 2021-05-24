@@ -1,4 +1,3 @@
-/* eslint-disable array-callback-return */
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 
@@ -6,13 +5,8 @@ import { WORKS_DATA, LANGUAGE_DATA } from './WorksData';
 import { WorksMap } from './WorksMap';
 
 import { Container } from '../../styles/Container';
-import { 
-    WorksWrapper,
-    WorksSort,
-    SortWrapper,
-    SortLanguage,
-    WorksExamples
-} from '../../styles/Works';
+import * as S from './works-styling';
+
 
 export const Works = () => {
     const [newData, setNewData] = useState(WORKS_DATA);
@@ -58,25 +52,25 @@ export const Works = () => {
             <meta name="description" content="Works" />
             <link rel="canonical" href="https://roman-gulamov.github.io/Portfolio/#/works" />
         </Helmet>
-            <WorksWrapper>
+            <S.WorksWrapper>
                 <Container>
-                <WorksSort>
-                    <SortWrapper>
+                <S.WorksSort>
+                    <S.SortWrapper>
                         {LANGUAGE_DATA.map(({ id, language }) =>
-                            <SortLanguage
+                            <S.SortLanguage
                                 activeClass={searchActive(language)}
                                 key={id} 
                                 onClick={() => filterWorks(language)}
                             >   {language}
-                            </SortLanguage>
+                            </S.SortLanguage>
                         )}
-                    </SortWrapper>
-                </WorksSort>
-                <WorksExamples>
+                    </S.SortWrapper>
+                </S.WorksSort>
+                <S.WorksExamples>
                     <WorksMap worksData={newData} animation={animation} />
-                </WorksExamples>
+                </S.WorksExamples>
                 </Container>
-            </WorksWrapper>
+            </S.WorksWrapper>
         </>
     )
 }

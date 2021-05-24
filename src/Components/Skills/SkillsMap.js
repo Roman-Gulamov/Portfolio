@@ -1,37 +1,28 @@
 import React from 'react';
 
 import { SKILLS_DATA } from './SkillsData';
-import {
-    SkillsItem,
-    SkillsImg,
-    ImgLanguage,
-    SkillsProgress,
-    ProgressInformation,
-    ProgressTitle,
-    ProgressProcent,
-    ProgressBar
-} from '../../styles/Skills';
+import * as S from './skills-styling';
 
 
 export const SkillsMap = () => {
     return (
         <>
         {SKILLS_DATA.map(({ id, name, src, procent, background }) =>
-            <SkillsItem key={id}>
-                <SkillsImg>
-                    <ImgLanguage src={src} alt={name}/>
-                </SkillsImg>
-                <SkillsProgress>
-                    <ProgressInformation>
-                        <ProgressTitle>{name}</ProgressTitle>
-                        <ProgressProcent>{procent}</ProgressProcent>
-                    </ProgressInformation>
-                    <ProgressBar 
+            <S.SkillsItem key={id}>
+                <S.SkillsImg>
+                    <S.ImgLanguage src={src} alt={name}/>
+                </S.SkillsImg>
+                <S.SkillsProgress>
+                    <S.ProgressInformation>
+                        <S.ProgressTitle>{name}</S.ProgressTitle>
+                        <S.ProgressProcent>{procent}</S.ProgressProcent>
+                    </S.ProgressInformation>
+                    <S.ProgressBar 
                         procent={procent} 
                         background={background} 
                     />
-                </SkillsProgress>
-            </SkillsItem>
+                </S.SkillsProgress>
+            </S.SkillsItem>
         )}
         </>
     )

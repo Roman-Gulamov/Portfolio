@@ -4,16 +4,7 @@ import { Link } from 'react-router-dom';
 
 import { Container } from '../../styles/Container';
 import { Button } from '../../styles/Button';
-import {
-    ProfileWrapper,
-    ProfileImage,
-    ImagePerson,
-    ProfileInformation,
-    InformationName,
-    InformationPosition,
-    InformationAbout,
-    AboutGreeting
-} from '../../styles/Profile';
+import * as S from './profile-styling';
 
 import Roman from '../../assets/images/profile/Roman.jpg';
 
@@ -28,31 +19,31 @@ export const Profile = () => {
             <link rel="canonical" href="https://roman-gulamov.github.io/Portfolio/#/profile" />
         </Helmet>
         <Container>
-            <ProfileWrapper>
-                <ProfileImage>
-                    <ImagePerson src={Roman} alt="Roman" />
-                </ProfileImage>
-                <ProfileInformation>
-                    <InformationName>
+            <S.ProfileWrapper>
+                <S.ProfileImage>
+                    <S.ImagePerson src={Roman} alt="Roman" />
+                </S.ProfileImage>
+                <S.ProfileInformation>
+                    <S.InformationName>
                         Roman Gulamov
-                        <InformationPosition>
+                        <S.InformationPosition>
                             Front-end Developer
-                        </InformationPosition>
-                    </InformationName>
-                    <InformationAbout>
-                        <AboutGreeting>
+                        </S.InformationPosition>
+                    </S.InformationName>
+                    <S.InformationAbout>
+                        <S.AboutGreeting>
                             <span role="img" aria-label="give-five">Hello! &#128588;</span> {'\n'}
-                        </AboutGreeting>
+                        </S.AboutGreeting>
                         <span role="img" aria-label="give-five">
                             I am Roman Gulamov, Front-end Developer from Saint Petersburg &#127969;
                         </span> {'\n'}  
                         If you are looking for a programmer just write to me and I will gladly become a part of your team!
-                    </InformationAbout>
+                    </S.InformationAbout>
                     <Link to='/contact'>
                         <Button>Hire me</Button>
                     </Link>
-                </ProfileInformation>
-            </ProfileWrapper>
+                </S.ProfileInformation>
+            </S.ProfileWrapper>
         </Container>
         </>
     )

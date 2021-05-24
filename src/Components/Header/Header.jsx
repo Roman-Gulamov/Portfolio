@@ -2,14 +2,7 @@ import React, { useState } from 'react';
 
 import { LinksMap } from './LinksMap';
 
-import { 
-    HeaderWrapper, 
-    HeaderNav,
-    NavHumburger,
-    Line,
-    NavWrapper,
-    NavInvisible,
-    NavTitle } from '../../styles/Header';
+import * as S from './header-styling';
 
 
 
@@ -32,26 +25,26 @@ export const Header = () => {
 
     return (
         <>
-        <HeaderWrapper>
-            <HeaderNav>
-                <NavHumburger 
+        <S.HeaderWrapper>
+            <S.HeaderNav>
+                <S.NavHumburger 
                     onClick={toggleMenu} 
                     position={isOpen === 'open' ? 'fixed' : 'absolute'}
                 >
-                    <Line />
-                    <Line />
-                    <Line />
-                </NavHumburger>
-                <NavTitle>{title}</NavTitle>
-                <NavWrapper open={isOpen}>
+                    <S.Line />
+                    <S.Line />
+                    <S.Line />
+                </S.NavHumburger>
+                <S.NavTitle>{title}</S.NavTitle>
+                <S.NavWrapper open={isOpen}>
                     <LinksMap toggleMenu={toggleMenu} />
-                    <NavInvisible
+                    <S.NavInvisible
                         open={isOpen}
                         onClick={toggleMenu}
                     />
-                </NavWrapper>
-            </HeaderNav>
-        </HeaderWrapper>
+                </S.NavWrapper>
+            </S.HeaderNav>
+        </S.HeaderWrapper>
         </>
     );
 }

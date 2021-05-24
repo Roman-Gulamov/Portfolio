@@ -2,31 +2,27 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Container } from '../../styles/Container';
-import {
-    FooterWrapper,
-    FooterSocial,
-    SocialItem
-} from '../../styles/Footer';
+import * as S from './footer-styling';
 
 import { SOCIAL_LINKS } from './footerData';
 
 
 export const Footer = () => {
     return (
-        <FooterWrapper>
+        <S.FooterWrapper>
             <Container>
-                <FooterSocial>
+                <S.FooterSocial>
                     {SOCIAL_LINKS.map(({ name, path, icon }) =>
-                        <SocialItem 
+                        <S.SocialItem 
                             key={name}
                             href={path} 
                             target='_blank' 
                         >
                             <FontAwesomeIcon icon={icon} size="2x" />
-                        </SocialItem>
+                        </S.SocialItem>
                     )}
-                </FooterSocial>
+                </S.FooterSocial>
             </Container>
-        </FooterWrapper>
+        </S.FooterWrapper>
     )
 }

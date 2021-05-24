@@ -1,9 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import { Container } from '../../styles/Container';
-import { SkillsWrapper } from '../../styles/Skills';
 import { SkillsMap } from './SkillsMap';
+
+import { Container } from '../../styles/Container';
+import * as S from './skills-styling';
 
 
 export const Skills = () => {
@@ -16,9 +17,9 @@ export const Skills = () => {
             <link rel="canonical" href="https://roman-gulamov.github.io/Portfolio/#/skills" />
         </Helmet>
         <Container>
-            <SkillsWrapper>
+            <S.SkillsWrapper>
                 <SkillsMap />
-            </SkillsWrapper>
+            </S.SkillsWrapper>
         </Container>
         </>
     )

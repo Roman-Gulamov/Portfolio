@@ -3,13 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import { Container } from '../../styles/Container';
 import { Button } from '../../styles/Button';
-import {
-    ResumeWrapper,
-    ResumeTitle,
-    ResumeDescription,
-    ResumeDownload,
-    DownloadButton
-} from '../../styles/Resume';
+import * as S from './resume-styling';
 
 
 export const Resume = () => {
@@ -22,19 +16,19 @@ export const Resume = () => {
             <link rel="canonical" href="https://roman-gulamov.github.io/Portfolio/#/resume" />
         </Helmet>
         <Container>
-            <ResumeWrapper>
-                <ResumeTitle>My resume</ResumeTitle>
-                <ResumeDescription>
+            <S.ResumeWrapper>
+                <S.ResumeTitle>My resume</S.ResumeTitle>
+                <S.ResumeDescription>
                     You can see my resume for your references, and I hope {'\n'}
                     that we can meet very soon 
                     <span role="img" aria-label="handshake">&#129309;</span>
-                </ResumeDescription>
-                <ResumeDownload>
-                    <DownloadButton href="https://spb.hh.ru/resume/2a00967dff07b1356f0039ed1f564e32555368" target="_blank">
+                </S.ResumeDescription>
+                <S.ResumeDownload>
+                    <S.DownloadButton href="https://spb.hh.ru/resume/2a00967dff07b1356f0039ed1f564e32555368" target="_blank">
                         <Button>Show Resume</Button>
-                    </DownloadButton>
-                </ResumeDownload>
-            </ResumeWrapper>
+                    </S.DownloadButton>
+                </S.ResumeDownload>
+            </S.ResumeWrapper>
         </Container>
         </>
     )

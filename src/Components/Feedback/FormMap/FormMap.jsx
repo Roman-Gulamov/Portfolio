@@ -4,20 +4,17 @@ import { Field, ErrorMessage } from "formik";
 import { INPUT_DATA } from './InputData';
 import { findValue } from './findValue';
 
-import {
-    FormItem,
-    FormLabel
-} from '../../../styles/Feedback';
+import * as S from '../feedback-styling';
 
 
 export const FormMap = ({ values }) => {
     return (
         <>
         {INPUT_DATA.map(({ name, component, autoFocus, autoComplete, type, title }) =>
-            <FormItem key={name}>
-                <FormLabel htmlFor={name}>
+            <S.FormItem key={name}>
+                <S.FormLabel htmlFor={name}>
                     {title}
-                </FormLabel>
+                </S.FormLabel>
                 <Field
                     component={component}
                     name={name}
@@ -27,7 +24,7 @@ export const FormMap = ({ values }) => {
                     value={findValue(name, values)}
                 />
                 <ErrorMessage component="span" name={name} />
-            </FormItem>
+            </S.FormItem>
         )}
         </>
     )
