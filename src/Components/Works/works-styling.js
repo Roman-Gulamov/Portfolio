@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { rollInAnimations } from './keyframes';
+import * as K from '../../styles/keyframes';
 
 
 export const WorksWrapper = styled.main`
@@ -54,7 +54,7 @@ export const ExamplesItem = styled.div`
     margin: 1em;
 
     ${props => props.animation && css`
-        animation: .8s linear ${rollInAnimations};
+        animation: .8s linear ${K.rollInAnimations};
         animation-fill-mode: forwards;
     `}
 ` 

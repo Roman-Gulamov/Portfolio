@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { progress } from './keyframes';
+import * as K from '../../styles/keyframes';
 
 
 export const SkillsWrapper = styled.main`
@@ -80,6 +80,6 @@ export const ProgressBar = styled.div`
         left: 0%;
         background: ${props => props.background || 'yellow'};
         border-radius: 3em;
-        animation: ${progress} 2s ease-in 1 forwards;
+        animation: ${K.progress} 2s ease-in 1 forwards;
     }
 ` 
