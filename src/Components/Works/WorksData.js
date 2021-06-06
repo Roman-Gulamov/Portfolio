@@ -10,6 +10,7 @@ import BuhOne from '../../assets/images/works/BuhOne.png';
 import Leo from '../../assets/images/works/Leo.png';
 import PhotoGallery from '../../assets/images/works/PhotoGallery.png';
 import TicTac from '../../assets/images/works/TicTac.png';
+import Beverages from '../../assets/images/works/Beverages.png';
 import Subjects from '../../assets/images/works/Subjects.png';
 import LiveJournal from '../../assets/images/works/LiveJournal.png';
 
@@ -101,13 +102,20 @@ export const WORKS_DATA = [
     },
     {
         id: '13',
+        img: Beverages,
+        git: 'https://github.com/Roman-Gulamov/Beverages',
+        ghPages: 'https://roman-gulamov.github.io/Beverages',
+        languageName: 'React/PWA'
+    },
+    {
+        id: '14',
         img: Subjects,
         git: 'https://github.com/Roman-Gulamov/Subjects',
         ghPages: 'https://roman-gulamov.github.io/Subjects',
         languageName: 'React/SCSS'
     },
     {
-        id: '14',
+        id: '15',
         img: LiveJournal,
         git: 'https://github.com/Roman-Gulamov/ListOfPosts',
         ghPages: 'https://roman-gulamov.github.io/ListOfPosts',
