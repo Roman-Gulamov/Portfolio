@@ -31,31 +31,31 @@ export const SKILLS_DATA = [
     },
     {
         id: '3',
+        name: 'Styled-components',
+        src: StyledComponents,
+        procent: '95%',
+        background: '#FBA2D9'
+    },
+    {
+        id: '4',
         name: 'SCSS',
         src: SCSS,
         procent: '95%',
         background: '#CF649A'
     },
     {
-        id: '4',
-        name: 'Styled-components',
-        src: StyledComponents,
-        procent: '90%',
-        background: '#FBA2D9'
-    },
-    {
         id: '5',
-        name: 'jQuery',
-        src: jQuery,
+        name: 'React',
+        src: ReactImg,
         procent: '90%',
-        background: '#0867AB'
+        background: '#56C2E0'
     },
     {
         id: '6',
-        name: 'React',
-        src: ReactImg,
+        name: 'Next.js',
+        src: NextJs,
         procent: '80%',
-        background: '#56C2E0'
+        background: '#000'
     },
     {
         id: '7',
@@ -66,51 +66,51 @@ export const SKILLS_DATA = [
     },
     {
         id: '8',
-        name: 'TypeScript',
-        src: TypeScript,
-        procent: '70%',
-        background: '#295FBE'
+        name: 'jQuery',
+        src: jQuery,
+        procent: '80%',
+        background: '#0867AB'
     },
     {
         id: '9',
-        name: 'Next.js',
-        src: NextJs,
-        procent: '60%',
-        background: '#000'
+        name: 'TypeScript',
+        src: TypeScript,
+        procent: '75%',
+        background: '#295FBE'
     },
     {
         id: '10',
+        name: 'Webpack',
+        src: Webpack,
+        procent: '55%',
+        background: '#0D3B84'
+    },
+    {
+        id: '11',
+        name: 'Gulp',
+        src: Gulp,
+        procent: '55%',
+        background: '#D44B48'
+    },
+    {
+        id: '12',
         name: 'MySQL',
         src: MySQL,
         procent: '50%',
         background: '#00608C'
     },
     {
-        id: '11',
-        name: 'Webpack',
-        src: Webpack,
-        procent: '50%',
-        background: '#0D3B84'
-    },
-    {
-        id: '12',
-        name: 'Gulp',
-        src: Gulp,
-        procent: '50%',
-        background: '#D44B48'
-    },
-    {
         id: '13',
         name: 'Node.js',
         src: NodeJs,
-        procent: '35%',
+        procent: '40%',
         background: '#83CD29'
     },
     {
         id: '14',
         name: 'PHP',
         src: PHP,
-        procent: '35%',
+        procent: '20%',
         background: '#8A94BF'
     },
 ]
