@@ -15,11 +15,13 @@ export const WorksMap = ({ worksData, animation }) => {
                     <S.DescriptionProject>
                         <S.ProjectTitle>{languageName}</S.ProjectTitle>
                         <S.ProjectLinks>
+                        {git !== null &&
                             <S.LinksItem>
                                 <S.ItemGit href={git} target="_blank">
                                     <FontAwesomeIcon icon={faGithub} size="2x" />
                                 </S.ItemGit>
                             </S.LinksItem>
+                        }
                         {ghPages !== null &&
                             <S.LinksItem>
                                 <S.ItemGit href={ghPages} target="_blank">
